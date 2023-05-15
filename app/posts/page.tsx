@@ -1,7 +1,7 @@
 import PostEntry from '../_components/PostEntry';
 import { Post } from '../_types/Post';
 
-export async function getAllPosts() {
+async function getAllPosts() {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts', {});
   return await res.json();
 }

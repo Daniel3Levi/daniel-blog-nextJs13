@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export async function getPostById(postId: number) {
+async function getPostById(postId: number) {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${postId}`
   );
